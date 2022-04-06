@@ -1,0 +1,10 @@
+Total: 10229 bytes 
+list of files: 
+archive.zip
+challenge.py
+fileName.txt.bak
+newName.txt
+Os_path_util.py
+R_W.py
+shell.py
+testzip.zip
