@@ -1,26 +1,32 @@
 import random
 
+
 def main():
-    userChoice = input("choose 'r' rock,'p' paper or 's' scissor\n")
-    computerChoice = random.choice(['r','p','s'])
+    x = 0
+    while (x < 3):
 
-    print(computerChoice)
+        userChoice = input("choose 'r' rock,'p' paper or 's' scissor\n")
+        computerChoice = random.choice(['r', 'p', 's'])
 
-    if userChoice == computerChoice:
-        print("It's a tie") 
+        print(computerChoice)
 
-    elif check_winner(userChoice,computerChoice):
-        print('You Loose')
+        if userChoice == computerChoice:
+            print("It's a tie")
 
-    else:
-        print('You win') 
+        elif check_winner(userChoice, computerChoice):
+            print('You Loose')
+
+        else:
+            print('You win')
+
+        x += 1
 
 
-    
 def check_winner(player, computer):
-    if (player == 'r' and computer == 'p') or \
-         (player == 'p' and computer == 's') or (player == 's' and computer == 'r'):
-        return True
+        if(player == 'r' and computer == 'p') or \
+            (player == 'p' and computer == 's') or (player == 's' and computer == 'r'):
+            return True
+
 
 if __name__ == "__main__":
     main()
