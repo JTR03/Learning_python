@@ -2,6 +2,8 @@ import random
 
 
 def main():
+    y = 0
+    z = 0
     x = 0
     while (x < 3):
 
@@ -11,21 +13,28 @@ def main():
         print(computerChoice)
 
         if userChoice == computerChoice:
-            print("It's a tie")
-
+            z
+            y
         elif check_winner(userChoice, computerChoice):
-            print('You Loose')
+            z += 1
 
         else:
-            print('You win')
+            y += 1
 
         x += 1
 
+    if y > z:
+        print('player wins')
+    elif y < z:
+        print('computer wins')
+    else:
+        print("It's a tie")
+
 
 def check_winner(player, computer):
-        if(player == 'r' and computer == 'p') or \
+    if(player == 'r' and computer == 'p') or \
             (player == 'p' and computer == 's') or (player == 's' and computer == 'r'):
-            return True
+        return True
 
 
 if __name__ == "__main__":
