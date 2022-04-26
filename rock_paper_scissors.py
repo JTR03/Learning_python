@@ -12,16 +12,20 @@ def main():
 
         print(computerChoice)
 
-        if userChoice == computerChoice:
-            z
-            y
-        elif check_winner(userChoice, computerChoice):
-            z += 1
+        if (userChoice == 'r' or userChoice == 'p' or userChoice == 's'):
 
+            if userChoice == computerChoice:
+                z
+                y
+            elif check_winner(userChoice, computerChoice):
+                z += 1
+
+            else:
+                y += 1
+
+            x += 1
         else:
-            y += 1
-
-        x += 1
+            print('enter a valid input')
 
     if y > z:
         print('player wins')
